@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
 import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 
 const Intro = () => {
   return (
@@ -13,7 +13,7 @@ const Intro = () => {
             Hi, I'm <span className="text-[#915EFF]"> Andrés</span>
           </h1>
 
-          <div className="mt-30 text-blue-800 w-full ml-0 text-center">
+          <div className="mt-20 text-blue-800 w-full ml-0 text-center">
             <p className={`mb-2`}>Experience in</p>
             <h1 className="text-5xl">
               <Typewriter

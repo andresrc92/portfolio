@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -8,7 +8,14 @@ import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
 import "../index.css";
 
-const InputField = ({ label, value, onChange, placeholder, name, type }) => (
+const InputField = ({
+  label,
+  value,
+  onChange,
+  placeholder,
+  name,
+  type,
+}: any) => (
   <label className="flex flex-col">
     <span className="text-black font-medium mb-4">{label}</span>
     <input
@@ -23,7 +30,7 @@ const InputField = ({ label, value, onChange, placeholder, name, type }) => (
 );
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -34,7 +41,7 @@ const Contact = () => {
   const [nameError, setNameError] = useState("");
   const [confirmation, setConfirmation] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setForm({
       ...form,
@@ -42,12 +49,12 @@ const Contact = () => {
     });
   };
 
-  const validateEmail = (email) => {
+  const validateEmail = (email: any) => {
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return regex.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setEmailError("");
     setNameError("");
@@ -101,7 +108,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden pl-90 mb-50`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden lg:pl-90 mb-50`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -158,6 +165,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
+        <h1>ihsdffiojwdas</h1>
         {/* <EarthCanvas /> */}
       </motion.div>
     </div>
