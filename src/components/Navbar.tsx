@@ -9,6 +9,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
+
+  const toggleResume = () => {
+    const resumeUrl = "/portfolio/Resume.pdf";
+    window.open(resumeUrl);
+  };
+
   return (
     <nav className="w-screen fixed top-0 left-0 z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
@@ -41,11 +47,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
               About{" "}
             </a>
             <a
-              href="#projects"
+              href="#experience"
               className="text-blue-950 hove:text-white transition-colors"
             >
               {" "}
-              Projects{" "}
+              Work{" "}
             </a>
             <a
               href="#contact"
@@ -54,6 +60,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
               {" "}
               Contact{" "}
             </a>
+
+            <button
+              onClick={toggleResume}
+              className="text-blue-950 hove:text-white transition-colors"
+            >
+              Resume
+            </button>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { Intro, About } from "./components";
+import { Intro, About, Experience, Contact } from "./components";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +13,8 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Intro />
         <About />
+        <Experience />
+        <Contact />
       </div>
     </BrowserRouter>
   );

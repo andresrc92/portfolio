@@ -34,10 +34,10 @@ const About = () => {
 
           <p className=" text-black text-xl mt-9 max-w-4xl">
             I am an Electronics Engineer specialized in Robotics & AI. I take
-            pride in my ability to learn and adapt to new technologies beyond
-            the foundations my education has provided me. I am passionate about
-            facing challenges alongside a team that values innovation,
-            collaboration and continuous learning.
+            pride in my ability to learn and adapt to new technologies as part
+            of my entrepreneurial spirit. I am passionate about facing
+            challenges alongside a team that values innovation, collaboration
+            and continuous learning.
           </p>
         </div>
       </div>
