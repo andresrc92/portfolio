@@ -14,7 +14,7 @@ const Intro = () => {
           </h1>
 
           <div className="mt-20 text-blue-800 w-full ml-0 text-center">
-            <p className={`mb-2`}>Experience in</p>
+            <p className={`mb-2`}>I can help you with</p>
             <h1 className="text-5xl">
               <Typewriter
                 options={{
