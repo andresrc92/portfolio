@@ -1,5 +1,5 @@
 import About from "./About";
-import {Intro} from "./Intro";
+import Intro from "./Intro";
 
 export {
     About,

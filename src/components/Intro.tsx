@@ -1,6 +1,7 @@
 import Typewriter from "typewriter-effect";
+import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
 
-export const Intro = () => {
+const Intro = () => {
   return (
     <section className="relative w-screen h-screen mx-auto">
       <div
@@ -49,3 +50,11 @@ export const Intro = () => {
     </section>
   );
 };
+
+const props: SectionWrapperProps = {
+  idName: "home",
+  Component: Intro,
+};
+
+const WrappedIntro = SectionWrapper(props);
+export default WrappedIntro;

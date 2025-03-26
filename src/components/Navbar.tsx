@@ -13,7 +13,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
     <nav className="w-screen fixed top-0 left-0 z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="/" className="font-mono text-xl font-bold text-blue-950">
+          <a href="#home" className="font-mono text-xl font-bold text-blue-950">
             {" "}
             Andrés Rivas{" "}
           </a>
