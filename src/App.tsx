@@ -6,7 +6,6 @@ import { Intro } from "./components/Intro";
 import WrappedAbout from "./components/About";
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
