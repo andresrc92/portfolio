@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { FaBriefcase, FaEnvelope, FaInfo, FaUser } from "react-icons/fa";
+import { FaBriefcase, FaEnvelope, FaInfo } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 
 interface NavbarProps {

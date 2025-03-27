@@ -1,4 +1,4 @@
-import {python, cpp, ros, pytorch, atos, axxiome, genba, seedorina, javascript, nodeJs, opencv, docker, linux, react, tensorflow, cuda, github} from "../assets";
+import {python, cpp, ros, pytorch, atos, axxiome, genba, seedorina, nodeJs, opencv, docker, linux, react, tensorflow, cuda, github} from "../assets";
 
 export const services = [
     { title: "Python", icon: python },
