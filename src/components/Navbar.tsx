@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { FaBriefcase, FaEnvelope, FaInfo, FaUser } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa6";
 
 interface NavbarProps {
   menuOpen: boolean;
@@ -16,7 +18,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
   };
 
   return (
-    <nav className="w-screen fixed top-0 left-0 z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="w-screen fixed top-0 z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-blue-950">
@@ -24,21 +26,40 @@ export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
             Andrés Rivas{" "}
           </a>
 
+          {/* Mobile NavBar */}
           <div
-            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+            className="relative cursor-pointer z-40 md:hidden gap-5 flex felx-row mr-10 scale-130"
             onClick={() => setMenuOpen((prev: any) => !prev)}
           >
-            &#9776;
-          </div>
-
-          <div className="hidden md:flex items-center space-x-8">
             <a
-              href="#home"
+              href="#about"
               className="text-blue-950 hove:text-white transition-colors"
             >
-              {" "}
-              Home
+              <FaInfo />
             </a>
+            <a
+              href="#experience"
+              className="text-blue-950 hove:text-white transition-colors"
+            >
+              <FaBriefcase />
+            </a>
+            <a
+              href="#contact"
+              className="text-blue-950 hove:text-white transition-colors"
+            >
+              <FaEnvelope />
+            </a>
+
+            <button
+              onClick={toggleResume}
+              className="text-blue-950 hove:text-white transition-colors"
+            >
+              <FaDownload />
+            </button>
+          </div>
+
+          {/* Desktop NavBar */}
+          <div className="hidden md:flex items-center space-x-8">
             <a
               href="#about"
               className="text-blue-950 hove:text-white transition-colors"

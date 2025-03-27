@@ -1,38 +1,34 @@
-import { Tilt } from "react-tilt";
-import { services } from "../constants";
+import { tools } from "../constants";
 import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
 
-const TechCard = ({ title, icon }: any) => {
+const ToolsCard = ({ tool }: any) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
-      <div className="bg-tertiary border-2 border-gray-500 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-20 h-20 object-contain"
-          loading="lazy"
-        />
-
-        <h3 className="text-black text-[20px] font-bold text-center">
-          {title}
-        </h3>
+    <div className="text-black text-center flex flex-col w-full justify-center px-5">
+      <h1 className="relative bg-white px-4 mx-auto top-3">{tool.title}</h1>{" "}
+      <div className="flex flex-row border-2 rounded-2xl border-black p-5 justify-evenly">
+        {tool.icons.map((icon: any) => (
+          <img
+            src={icon}
+            alt="web-development"
+            className="w-15 h-15 object-contain hover:scale-110"
+            loading="lazy"
+          />
+        ))}
       </div>
-    </Tilt>
+    </div>
   );
 };
 
 const About = () => {
   return (
-    <section className="relative w-screen h-screen mx-auto">
-      <div
-        className={`inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
-      >
-        <div className="w-full">
-          <h1 className={`text-left ml-20 text-black mt-15 text-3xl`}>
+    <section className="relative w-screen min-h-screen mx-auto gap-7 flex flex-col xl:flex-row justify-evenly pt-20">
+      <div className={`xl:w-1/2 items-start`}>
+        <div className="w-full px-10">
+          <h1 className={`text-left ml-20 text-black text-3xl`}>
             Introduction
           </h1>
 
-          <p className=" text-black text-xl mt-9 max-w-4xl">
+          <p className=" text-black text-xl mt-9 mx-10 max-w-4xl">
             I am an Electronics Engineer specialized in Robotics & AI. I take
             pride in my ability to learn and adapt to new technologies as part
             of my entrepreneurial spirit. I am passionate about facing
@@ -42,10 +38,12 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid grid-flow-col grid-cols-4 gap-5 text-black mt-20 mx-80 text-center h-2/3">
-        {services.map((service: any, index: any) => (
-          <TechCard key={index} title={service.title} icon={service.icon} />
-        ))}
+      <div className="justify-center flex xl:w-1/2 px-10">
+        <div className="flex flex-col w-full">
+          {tools.map((tool: any) => (
+            <ToolsCard tool={tool} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -58,7 +58,7 @@ const Experience = () => {
       <div className="text-black mt-20 w-screen my-12 flex justify-center text-3xl">
         <h1>Work experience</h1>
       </div>
-      <div className="text-black relative w-screen flex flex-col items-center xl:mb-40">
+      <div className="text-black relative w-screen flex flex-col items-center xl:mb-40 ">
         <VerticalTimeline lineColor="gray">
           {experience.map((exp: any, index: any) => (
             <ExperienceCard key={index} experience={exp} />

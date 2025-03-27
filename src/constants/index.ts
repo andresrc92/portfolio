@@ -1,4 +1,4 @@
-import {python, cpp, ros, pytorch, atos, axxiome, genba, seedorina} from "../assets";
+import {python, cpp, ros, pytorch, atos, axxiome, genba, seedorina, javascript, nodeJs, opencv, docker, linux, react, tensorflow, cuda, github} from "../assets";
 
 export const services = [
     { title: "Python", icon: python },
@@ -6,6 +6,14 @@ export const services = [
     { title: "ROS", icon: ros },
     { title: "PyTorch", icon: pytorch },
   ];
+
+export const tools = [
+  {title: "Programming", icons: [python, cpp, nodeJs]},
+  {title: "Artificial Inteligence", icons:[pytorch, tensorflow, cuda]},
+  {title: "Frameworks", icons:[ros, react, opencv]},
+  {title: "Tools", icons:[linux, github, docker]}
+]
+
 
 export const experience = [
   {
