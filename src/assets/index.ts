@@ -18,3 +18,8 @@ export { default as nodeJs } from "../assets/node-js-svgrepo-com.svg";
 export { default as opencv } from "../assets/opencv-svgrepo-com.svg";
 export { default as react } from "../assets/react-svgrepo-com.svg";
 export { default as tensorflow } from "../assets/tensorflow-svgrepo-com.svg";
+export { default as avatar } from "../assets/avatar22.webp";
+export { default as pria_demo } from "../assets/pria-demo.png";
+export { default as paretto } from "../assets/paretto.png";
+export { default as tmini } from "../assets/tmini.jpeg";
+export { default as kicad } from "../assets/KiCad-Logo-short.svg";

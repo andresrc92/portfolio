@@ -9,7 +9,8 @@ interface NavbarProps {
 
 export const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    // document.body.style.overflow = menuOpen ? "hidden" : "";
+    console.log(menuOpen);
   }, [menuOpen]);
 
   const toggleResume = () => {

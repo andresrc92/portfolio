@@ -6,11 +6,12 @@ const ToolsCard = ({ tool }: any) => {
     <div className="text-black text-center flex flex-col w-full justify-center px-5">
       <h1 className="relative bg-white px-4 mx-auto top-3">{tool.title}</h1>{" "}
       <div className="flex flex-row border-2 rounded-2xl border-black p-5 justify-evenly">
-        {tool.icons.map((icon: any) => (
+        {tool.icons.map((icon: any, index: number) => (
           <img
+            key={index}
             src={icon}
             alt="web-development"
-            className="w-15 h-15 object-contain hover:scale-110"
+            className="w-15 object-contain hover:scale-110"
             loading="lazy"
           />
         ))}
@@ -40,8 +41,8 @@ const About = () => {
 
       <div className="justify-center flex xl:w-1/2 px-10">
         <div className="flex flex-col w-full">
-          {tools.map((tool: any) => (
-            <ToolsCard tool={tool} />
+          {tools.map((tool: any, index: number) => (
+            <ToolsCard key={index} tool={tool} />
           ))}
         </div>
       </div>

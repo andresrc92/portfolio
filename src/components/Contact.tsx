@@ -7,6 +7,7 @@ import { styles } from "../styles";
 import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
 import { slideIn } from "../utils/motion";
 import "../index.css";
+import { avatar } from "../assets";
 
 const InputField = ({
   label,
@@ -108,7 +109,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden lg:pl-90 mb-50 mx-10`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden lg:pl-90 mb-30 pt-20 mx-10`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -163,9 +164,13 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] justify-center my-auto text-center"
       >
-        <h1>ihsdffiojwdas</h1>
+        <img src={avatar} className="rounded-full w-1/2 mx-auto sm:w-4/6" />
+        <div className="text-black relative w-fit mx-auto shadow border-gray-300 border rounded-2xl py-2 px-5 lg:-top-15">
+          <h3>Thank you for stopping by! </h3>
+          <h3> Feel free to leave a message before you go.</h3>{" "}
+        </div>
         {/* <EarthCanvas /> */}
       </motion.div>
     </div>
