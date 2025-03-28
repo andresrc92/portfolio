@@ -9,7 +9,9 @@ const Intro = () => {
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="w-full">
-          <h1 className={`text-left ml-20 text-blue-500 text-5xl mt-10`}>
+          <h1
+            className={`text-left md:ml-20 ml-5 text-blue-500 md:text-5xl md:mt-10 mt-5 text-2xl`}
+          >
             Hi, I'm <span className="text-[#915EFF]"> Andrés</span>
           </h1>
 
