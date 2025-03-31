@@ -1,11 +1,6 @@
 import Typewriter from "typewriter-effect";
 import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
-import {
-  FaArrowAltCircleDown,
-  FaArrowCircleDown,
-  FaArrowDown,
-} from "react-icons/fa";
-import { FaArrowDown19, FaArrowDownShortWide } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa";
 // import { ComputersCanvas } from "./canvas";
 
 const Intro = () => {
