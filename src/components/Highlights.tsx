@@ -12,7 +12,7 @@ const HighlightsCard = ({ highlight, index }: any) => {
       <img src={highlight.thumbnail} className="w-100" loading="lazy" />
       <p className="mt-5 max-w-100 text-left">{highlight.desc}</p>
       <div className="flex flex-row w-full my-5 justify-around">
-        <div className="h-full">
+        <div className="relative top-1">
           {highlight.link ? (
             <a href={highlight.link}>
               <FaYoutube className="scale-200" color="red" />
