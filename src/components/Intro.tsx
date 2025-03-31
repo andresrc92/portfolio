@@ -1,5 +1,11 @@
 import Typewriter from "typewriter-effect";
 import SectionWrapper, { SectionWrapperProps } from "../hoc/SectionWrapper";
+import {
+  FaArrowAltCircleDown,
+  FaArrowCircleDown,
+  FaArrowDown,
+} from "react-icons/fa";
+import { FaArrowDown19, FaArrowDownShortWide } from "react-icons/fa6";
 // import { ComputersCanvas } from "./canvas";
 
 const Intro = () => {
@@ -21,11 +27,11 @@ const Intro = () => {
               <Typewriter
                 options={{
                   strings: [
+                    "Software development",
                     "Robotics",
                     "AI & ML",
                     "Electronics",
                     "Sensors & IoT",
-                    "Digital Twins",
                   ],
                   autoStart: true,
                   loop: true,
@@ -35,6 +41,10 @@ const Intro = () => {
             </h1>
           </div>
         </div>
+      </div>
+
+      <div className="w-full text-center absolute bottom-40 align-middle flex justify-center">
+        <FaArrowDown className="scale-200 md:scale-400 text-blue-800 animate-bounce" />
       </div>
 
       {/* <ComputersCanvas /> */}

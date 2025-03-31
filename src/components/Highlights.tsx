@@ -11,17 +11,17 @@ const HighlightsCard = ({ highlight, index }: any) => {
       <h1 className="text-left px-4 my-5">{highlight.title}</h1>{" "}
       <img src={highlight.thumbnail} className="w-100" loading="lazy" />
       <p className="mt-5 max-w-100 text-left">{highlight.desc}</p>
-      <div className="flex flex-row w-full my-5 justify-around ">
-        <div>
+      <div className="flex flex-row w-full my-5 justify-around">
+        <div className="h-full">
           {highlight.link ? (
             <a href={highlight.link}>
-              <FaYoutube className="scale-200" />
+              <FaYoutube className="scale-200" color="red" />
             </a>
           ) : (
             ""
           )}
         </div>
-        <div className="flex flex-row w-fit gap-4">
+        <div className="flex flex-row w-fit gap-4 h-full">
           {highlight.icons.map((icon: any, index: number) => (
             <img
               key={index}

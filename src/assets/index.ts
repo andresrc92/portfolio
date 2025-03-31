@@ -25,3 +25,7 @@ export { default as tmini } from "../assets/tmini.jpeg";
 export { default as kicad } from "../assets/KiCad-Logo-short.svg";
 export { default as winchrobot } from "../assets/winchrobot.png";
 export { default as background } from "../assets/back.gif";
+export { default as deeplearningai } from "../assets/deeplearning.png";
+export { default as flask } from "../assets/flask-svgrepo-com.svg";
+export { default as gcp } from "../assets/google-cloud-svgrepo-com.svg";
+export { default as aws } from "../assets/aws-svgrepo-com.svg";

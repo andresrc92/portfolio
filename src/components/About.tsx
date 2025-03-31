@@ -30,11 +30,19 @@ const About = () => {
           </h1>
 
           <p className=" text-black text-xl mt-9 mx-10 max-w-4xl">
-            I am an Electronics Engineer specialized in Robotics & AI. I take
-            pride in my ability to learn and adapt to new technologies as part
-            of my entrepreneurial spirit. I am passionate about facing
-            challenges alongside a team that values innovation, collaboration
-            and continuous learning.
+            I am an <b>Electronics Engineer</b> specialized in{" "}
+            <b>Robotics & AI</b>. I take pride in my ability to learn and adapt
+            to new technologies as part of my entrepreneurial spirit. I am
+            passionate about facing challenges alongside a team that values
+            innovation, collaboration and continuous learning.
+          </p>
+
+          <p className=" text-black text-xl mt-9 mx-10 max-w-4xl">
+            I have relevant experience in solving <b>real world problems</b>{" "}
+            through <b>software and hardware</b> development. As a technical
+            leader I enjoy sharing knowledge and brainstorming sessions, I am
+            also certified in agile methodologies as <b>SCRUM</b> and{" "}
+            <b>Kanban</b>.
           </p>
         </div>
       </div>
