@@ -11,9 +11,9 @@ const Intro = () => {
       >
         <div className="w-full">
           <h1
-            className={`text-left md:ml-20 ml-5 text-blue-500 md:text-5xl md:mt-10 mt-5 text-2xl`}
+            className={`text-left md:ml-20 ml-5 text-blue-500 md:text-5xl text-2xl`}
           >
-            Hi, I'm <span className="text-[#915EFF]"> Andrés</span>
+            Hi, there
           </h1>
 
           <div className="mt-20 text-blue-800 w-full ml-0 text-center">
@@ -39,7 +39,9 @@ const Intro = () => {
       </div>
 
       <div className="w-full text-center absolute bottom-40 align-middle flex justify-center">
-        <FaArrowDown className="scale-200 md:scale-400 text-blue-800 animate-bounce" />
+        <a href="#about">
+          <FaArrowDown className="scale-200 md:scale-400 text-blue-800 animate-bounce" />
+        </a>
       </div>
 
       {/* <ComputersCanvas /> */}
